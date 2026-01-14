@@ -11,9 +11,11 @@
             Atendimento odontológico focado em bem-estar, estética e confiança.
           </p>
           <a
-            href="#agendar"
+            href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma avaliação com a Dra. Natalia Vita."
+            target="_blank"
+            rel="noopener noreferrer"
             class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors duration-200 shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-            aria-label="Agendar Avaliação"
+            aria-label="Agendar Avaliação via WhatsApp"
           >
             Agendar Avaliação
           </a>

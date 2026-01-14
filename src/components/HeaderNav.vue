@@ -40,7 +40,9 @@
           </li>
           <li>
             <a
-              href="#agendar"
+              href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma avaliação com a Dra. Natalia Vita."
+              target="_blank"
+              rel="noopener noreferrer"
               class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors duration-200 font-medium"
             >
               Agendar
@@ -114,7 +116,9 @@
           </li>
           <li>
             <a
-              href="#agendar"
+              href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma avaliação com a Dra. Natalia Vita."
+              target="_blank"
+              rel="noopener noreferrer"
               @click="closeMobileMenu"
               class="block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors duration-200 font-medium text-center"
             >

@@ -76,7 +76,54 @@ Para personalizar o conteúdo, edite os componentes Vue em `src/components/`:
 - Ajuste cores e estilos no `tailwind.config.mjs`
 - Modifique textos e informações conforme necessário
 
+## 🚀 Deploy no GitHub Pages
+
+### Passo a passo:
+
+1. **Crie um repositório no GitHub**
+   - Acesse https://github.com/new
+   - Crie um novo repositório (ex: `odonto-vita`)
+
+2. **Configure o astro.config.mjs**
+   - Abra `astro.config.mjs`
+   - Substitua `SEU_USUARIO` pelo seu username do GitHub
+   - Se o repositório não for `username.github.io`, mantenha o `base: '/odonto-vita'` (ou o nome do seu repositório)
+   - Se for `username.github.io`, remova ou comente a linha `base: '/odonto-vita'`
+
+3. **Faça commit e push do código**
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin https://github.com/SEU_USUARIO/odonto-vita.git
+   git push -u origin main
+   ```
+
+4. **Configure o GitHub Pages**
+   - Vá em Settings > Pages no seu repositório
+   - Em "Source", selecione "GitHub Actions"
+   - O workflow já está configurado e será executado automaticamente
+
+5. **Aguarde o deploy**
+   - Vá em Actions no seu repositório
+   - Aguarde o workflow completar
+   - Sua página estará disponível em: `https://SEU_USUARIO.github.io/odonto-vita`
+
+### Configuração do astro.config.mjs:
+
+**Para repositório customizado** (ex: `username/odonto-vita`):
+```js
+site: 'https://SEU_USUARIO.github.io',
+base: '/odonto-vita', // Nome do repositório
+```
+
+**Para username.github.io**:
+```js
+site: 'https://SEU_USUARIO.github.io',
+// Remova ou comente a linha base
+```
+
 ## 📄 Licença
 
 Este projeto é de uso livre.
-# odonto-vita

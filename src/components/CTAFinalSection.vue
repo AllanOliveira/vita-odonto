@@ -6,9 +6,11 @@
           Pronta para cuidar da saúde e beleza do seu sorriso?
         </h2>
         <a
-          href="#agendar"
+          href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma avaliação com a Dra. Natalia Vita."
+          target="_blank"
+          rel="noopener noreferrer"
           class="inline-block bg-white text-blue-600 font-semibold px-8 py-4 rounded-lg text-lg hover:bg-gray-100 transition-colors duration-200 shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-600"
-          aria-label="Agendar consulta"
+          aria-label="Agendar consulta via WhatsApp"
         >
           Agendar Avaliação
         </a>

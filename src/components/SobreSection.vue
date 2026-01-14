@@ -21,7 +21,7 @@
               Sobre a Dentista
             </h2>
             <p class="text-lg text-gray-700 mb-4 leading-relaxed">
-              Sou dentista formada pela <strong>[Universidade]</strong>, com foco em saúde bucal e estética do sorriso. Meu objetivo é oferecer um atendimento acolhedor, moderno e personalizado para cada paciente.
+              Sou dentista formada pela <strong>UNICAMP</strong>, com foco em saúde bucal e estética do sorriso. Meu objetivo é oferecer um atendimento acolhedor, moderno e personalizado para cada paciente.
             </p>
             <div class="space-y-2 text-gray-600">
               <p><strong>Nome:</strong> Natalia Vita</p>
