@@ -1,4 +1,4 @@
-# 🦷 Odonto Vita - Landing Page
+# 🦷 Vita Odonto - Landing Page
 
 Landing page moderna para dentista autônoma, desenvolvida com AstroJS, Vue e Tailwind CSS.
 
@@ -82,13 +82,13 @@ Para personalizar o conteúdo, edite os componentes Vue em `src/components/`:
 
 1. **Crie um repositório no GitHub**
    - Acesse https://github.com/new
-   - Crie um novo repositório (ex: `odonto-vita`)
+   - Crie um novo repositório (ex: `vita-odonto`)
 
 2. **Configure o astro.config.mjs**
    - Abra `astro.config.mjs`
    - Substitua `SEU_USUARIO` pelo seu username do GitHub
-   - Se o repositório não for `username.github.io`, mantenha o `base: '/odonto-vita'` (ou o nome do seu repositório)
-   - Se for `username.github.io`, remova ou comente a linha `base: '/odonto-vita'`
+   - Se o repositório não for `username.github.io`, mantenha o `base: '/vita-odonto'` (ou o nome do seu repositório)
+   - Se for `username.github.io`, remova ou comente a linha `base: '/vita-odonto'`
 
 3. **Faça commit e push do código**
    ```bash
@@ -96,7 +96,7 @@ Para personalizar o conteúdo, edite os componentes Vue em `src/components/`:
    git add .
    git commit -m "Initial commit"
    git branch -M main
-   git remote add origin https://github.com/SEU_USUARIO/odonto-vita.git
+   git remote add origin https://github.com/SEU_USUARIO/vita-odonto.git
    git push -u origin main
    ```
 
@@ -108,14 +108,14 @@ Para personalizar o conteúdo, edite os componentes Vue em `src/components/`:
 5. **Aguarde o deploy**
    - Vá em Actions no seu repositório
    - Aguarde o workflow completar
-   - Sua página estará disponível em: `https://SEU_USUARIO.github.io/odonto-vita`
+   - Sua página estará disponível em: `https://SEU_USUARIO.github.io/vita-odonto`
 
 ### Configuração do astro.config.mjs:
 
-**Para repositório customizado** (ex: `username/odonto-vita`):
+**Para repositório customizado** (ex: `username/vita-odonto`):
 ```js
 site: 'https://SEU_USUARIO.github.io',
-base: '/odonto-vita', // Nome do repositório
+base: '/vita-odonto', // Nome do repositório
 ```
 
 **Para username.github.io**:
