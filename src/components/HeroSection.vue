@@ -23,10 +23,10 @@
 
         <!-- Coluna direita: Foto -->
         <div class="flex justify-center md:justify-end">
-          <figure class="relative w-full max-w-md">
+          <figure class="relative w-full max-w-[35rem]">
             <div class="aspect-square rounded-2xl overflow-hidden shadow-2xl bg-gray-100">
               <img
-                src="/images/dentista.png"
+                :src="imageUrl"
                 alt="Dra. Natalia Vita - Dentista profissional sorrindo"
                 class="w-full h-full object-cover"
                 loading="eager"
@@ -42,6 +42,8 @@
 
 <script setup lang="ts">
 // Componente Hero Section
+const baseUrl = import.meta.env.BASE_URL;
+const imageUrl = `${baseUrl}images/dentista.png`;
 </script>
 
 <style scoped>

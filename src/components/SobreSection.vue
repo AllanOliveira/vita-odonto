@@ -7,7 +7,7 @@
           <div class="flex justify-center md:justify-start">
             <div class="w-48 h-48 rounded-full overflow-hidden shadow-lg bg-gray-100 ring-4 ring-white">
               <img
-                src="/images/dentista.png"
+                :src="imageUrl"
                 alt="Dra. Natalia Vita"
                 class="w-full h-full object-cover"
                 loading="lazy"
@@ -37,4 +37,6 @@
 
 <script setup lang="ts">
 // Componente Sobre a Dentista
+const baseUrl = import.meta.env.BASE_URL;
+const imageUrl = `${baseUrl}images/dentista.png`;
 </script>
