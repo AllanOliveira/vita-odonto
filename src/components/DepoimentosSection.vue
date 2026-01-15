@@ -1,17 +1,33 @@
 <template>
-  <section class="depoimentos-section bg-gray-50 py-16 md:py-20">
+  <section class="depoimentos-section bg-slate-50 py-20 md:py-28">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
-        O que dizem nossos pacientes
-      </h2>
+
+      <!-- Título -->
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900">
+          O que dizem nossos pacientes
+        </h2>
+        <p class="mt-4 text-slate-600">
+          Experiências reais de quem confiou no nosso cuidado.
+        </p>
+      </div>
+
+      <!-- Grid -->
       <div class="max-w-5xl mx-auto">
-        <div class="grid md:grid-cols-3 gap-6">
+        <div class="grid sm:grid-cols-2 gap-8">
+
           <article
             v-for="depoimento in depoimentos"
             :key="depoimento.id"
-            class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-200"
+            class="relative bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300"
           >
-            <div class="mb-4">
+            <!-- Aspas decorativas -->
+            <span class="absolute top-6 right-6 text-6xl text-blue-100 font-serif leading-none select-none">
+              “
+            </span>
+
+            <!-- Estrelas -->
+            <div class="mb-6">
               <div class="flex text-yellow-400">
                 <svg
                   v-for="i in 5"
@@ -27,18 +43,24 @@
                 </svg>
               </div>
             </div>
-            <p class="text-gray-700 mb-4 italic leading-relaxed">
+
+            <!-- Texto -->
+            <p class="text-slate-700 mb-6 italic leading-relaxed">
               "{{ depoimento.texto }}"
             </p>
-            <p class="text-sm font-semibold text-gray-900">
+
+            <!-- Autor -->
+            <p class="text-sm font-semibold text-slate-900">
               {{ depoimento.autor }}
             </p>
           </article>
+
         </div>
       </div>
     </div>
   </section>
 </template>
+
 
 <script setup lang="ts">
 import { ref } from 'vue';

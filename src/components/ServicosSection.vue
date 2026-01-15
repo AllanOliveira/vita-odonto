@@ -1,47 +1,65 @@
 <template>
-  <section id="servicos" class="servicos-section bg-white py-16 md:py-20">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
-        Serviços / Consultas
-      </h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-        <article
+  <section id="servicos" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Título -->
+      <div class="text-center max-w-2xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900">
+          Serviços
+        </h2>
+        <p class="mt-4 text-slate-600">
+          Cuidados odontológicos focados na saúde, estética e bem-estar do seu sorriso.
+        </p>
+      </div>
+
+      <!-- Cards -->
+      <div class="mt-16 grid sm:grid-cols-2 lg:grid-cols-2 gap-8">
+
+        <div
           v-for="servico in servicos"
           :key="servico.id"
-          class="bg-white border border-gray-200 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-200"
+          class="group p-8 bg-slate-50 rounded-2xl transition-all duration-300 hover:bg-white hover:shadow-xl"
         >
-          <div class="mb-4">
-            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-              <svg
-                class="w-6 h-6 text-blue-600"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  :d="servico.icon"
-                />
-              </svg>
-            </div>
+          <!-- Ícone -->
+          <div
+            class="w-12 h-12 flex items-center justify-center rounded-xl bg-blue-100 text-blue-600 mb-6 group-hover:scale-110 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                :d="servico.icon"
+              />
+            </svg>
           </div>
-          <h3 class="text-xl font-semibold text-gray-900 mb-2">
+
+          <!-- Conteúdo -->
+          <h3 class="text-lg font-semibold text-slate-800">
             {{ servico.nome }}
           </h3>
-          <p class="text-gray-600 mb-4">
+
+          <p class="mt-3 text-slate-600 leading-relaxed">
             {{ servico.descricao }}
           </p>
-          <p class="text-sm text-gray-500">
-            <strong>Duração:</strong> {{ servico.duracao }}
+
+          <!-- Duração -->
+          <p class="mt-4 text-sm text-slate-500">
+            ⏱ {{ servico.duracao }}
           </p>
-        </article>
+        </div>
+
       </div>
     </div>
   </section>
 </template>
+
 
 <script setup lang="ts">
 import { ref } from 'vue';
